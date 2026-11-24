@@ -4,6 +4,6 @@ CFLAGS = -Wall -Wextra -O2
 all: dist/program
 dist/program: src/main.c
 	mkdir -p dist
-	$(CC) $(CFLAGS) -o $@ $<
+	$(CC) $(CFLAGS) -o $@ $< -lcrypto
 clean:
 	rm -rf dist
